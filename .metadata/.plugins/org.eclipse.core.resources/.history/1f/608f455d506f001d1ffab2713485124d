@@ -1,0 +1,17 @@
+package lab1;
+
+import java.io.*;
+
+public class Program {
+	public static void main(String[] args) {
+		Z1();
+	}
+	
+	private static void Z1() {
+		try {
+			byte[] bytes = System.in.readAllBytes();
+			String s = new String(bytes);
+			System.out.print(s.toCharArray()[s.length()-1]);
+		} catch (Exception e){}
+	}
+}

@@ -1,0 +1,22 @@
+package lab4;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Shop {
+	public static void Serve(User user) {
+		String report = user.Basket.GetContents();
+		Log(report);
+		user.Buy();
+	}
+	
+	private static void Log(String str) {
+		try {
+			var fs = new FileWriter("F:\\skt\\lab4\\src\\lab4\\report.txt", true);
+			fs.write(str);
+			fs.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

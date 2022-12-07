@@ -1,0 +1,30 @@
+package lab4;
+
+public class User {
+	public String Login;
+	public String Password;
+	
+	public double Cash;
+	
+	private Basket Basket;
+	
+	public User() {
+		Basket = new Basket();
+		Cash = 4000;
+	}
+	
+	public void GetProduct(Catalog<Product> catalog, Product product) {
+		Basket.Products.add(product);
+		catalog.Products.remove(product);
+	}
+	
+	public boolean Buy() {
+		double sum = 0;
+		for(Product p : Basket.Products) {
+			sum += p.Price;
+		}
+		if (sum > Cash) return false;
+		System.out.println("Успешно куплено " + Basket.Products.size() + " товаров");
+		return true;
+	}
+}

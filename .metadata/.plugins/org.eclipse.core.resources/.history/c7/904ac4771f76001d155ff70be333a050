@@ -1,0 +1,12 @@
+package lab4;
+
+public class Product {
+	public String Name;
+	public String Id;
+	public double Weight;
+	public double Price;
+	
+	public String GetProductDescription() {
+		return Id +": " + Name + " " + Price +"ð. " + Weight + "g.";
+	}
+}

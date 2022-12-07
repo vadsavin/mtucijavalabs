@@ -1,0 +1,13 @@
+package lab2;
+
+public class Phone {
+	public String Number;
+	public String Model;
+	public int Weight;
+	
+	public Phone(String number, String model, int weight) {
+		Number = number;
+		Model = model;
+		Weight = weight;
+	}
+}

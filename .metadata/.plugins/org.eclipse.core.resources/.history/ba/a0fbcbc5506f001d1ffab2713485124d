@@ -1,0 +1,27 @@
+package lab1;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Program {
+	public static void main(String[] args) {
+		Z1();
+	}
+	
+	private static void Z1() {
+		 Scanner myInput = new Scanner( System.in );
+	     int v = myInput.nextInt();
+	     System.out.print(v%10);
+	     
+	     myInput.close();
+	}
+	
+	private static void Z2() {
+		 Scanner myInput = new Scanner( System.in );
+	     int v = myInput.nextInt();
+	     if (v > 999) return;
+	     System.out.print(v%1000);
+	     
+	     myInput.close();
+	}
+}

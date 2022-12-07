@@ -1,0 +1,15 @@
+package lab1;
+
+import java.io.*;
+
+public class Program {
+	public static void main(String[] args) {
+		Console c = System.console();
+		Z1(c);
+	}
+	
+	private static void Z1(Console console) {
+		String line = console.readLine();
+		System.out.print(line.toCharArray()[line.length()-1]);
+	}
+}

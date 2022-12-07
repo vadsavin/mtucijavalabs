@@ -1,0 +1,17 @@
+package lab2;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Student[] students = new Student[] {
+			new Student("Makar", 5),
+			new Student("Dima", 3),
+			new Aspirant("Sveta", 5),
+			new Aspirant("Masha", 3)
+		};
+		
+		for(Student s : students) {
+			System.out.println(s.FirstName + ": " + s.GetScholarship());
+		}
+	}
+}

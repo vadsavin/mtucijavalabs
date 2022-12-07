@@ -1,0 +1,11 @@
+package lab4;
+
+import java.util.ArrayList;
+
+public class Basket {
+	public ArrayList<Product> Products;
+	
+	public Basket() {
+		Products = new ArrayList<Product>();
+	}
+}
